@@ -1,0 +1,13 @@
+package com.p2p.lending.domain.observer;
+
+import com.p2p.lending.domain.model.Loan;
+
+public class BorrowerNotificationObserver implements LoanFundingObserver {
+
+    @Override
+    public void onLoanFullyFunded(Loan loan) {
+        System.out.println("[NOTIFIKASI BORROWER] Pinjaman " 
+            + loan.getLoanId() 
+            + " telah terpenuhi sepenuhnya! Dana siap dicairkan.");
+    }
+}
