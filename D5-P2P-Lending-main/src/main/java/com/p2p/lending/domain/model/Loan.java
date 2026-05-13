@@ -1,11 +1,13 @@
 package com.p2p.lending.domain.model;
 
 import com.p2p.lending.domain.event.LoanAppliedEvent;
+import com.p2p.lending.domain.observer.LoanFundingNotifier;
 import com.p2p.lending.domain.state.AppliedState;
 import com.p2p.lending.domain.state.FundingState;
 import com.p2p.lending.domain.state.LoanState;
 import com.p2p.lending.domain.valueobject.LoanStatus;
 import com.p2p.lending.domain.valueobject.Money;
+import com.p2p.lending.strategy.InterestStrategy;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -30,6 +32,9 @@ public class Loan {
     private LoanState state;
     private List<Investment> investments;
     private List<Object> domainEvents;
+
+    // Strategy Pattern - untuk perhitungan bunga
+    private InterestStrategy interestStrategy;
 
     private static final FundingState fundingStateHandler = new FundingState();
 
@@ -146,6 +151,19 @@ public class Loan {
 
     public void setState(LoanState state) {
         this.state = state;
+    }
+
+    // =============================================
+    // STRATEGY PATTERN - Interest Calculation
+    // =============================================
+
+    public void setInterestStrategy(InterestStrategy strategy) {
+        this.interestStrategy = strategy;
+    }
+
+    public double calculateMonthlyInstallment() {
+        if (interestStrategy == null) return 0;
+        return interestStrategy.calculateInterest(targetAmount, tenorMonths);
     }
 
     // =============================================
