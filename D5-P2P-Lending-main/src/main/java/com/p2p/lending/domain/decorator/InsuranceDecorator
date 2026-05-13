@@ -1,0 +1,26 @@
+package com.p2p.lending.domain.decorator;
+
+/**
+ * Decorator Pattern - Concrete Decorator
+ * Menambahkan biaya asuransi ke loan.
+ */
+public class InsuranceDecorator extends LoanDecorator {
+
+    private final double insuranceFee;
+
+    public InsuranceDecorator(LoanComponent loan, double insuranceFee) {
+        super(loan);
+        if (insuranceFee < 0) throw new IllegalArgumentException("Insurance fee tidak boleh negatif");
+        this.insuranceFee = insuranceFee;
+    }
+
+    @Override
+    public double getCost() {
+        return loan.getCost() + insuranceFee;
+    }
+
+    @Override
+    public String getDescription() {
+        return loan.getDescription() + " + Insurance: " + insuranceFee;
+    }
+}
