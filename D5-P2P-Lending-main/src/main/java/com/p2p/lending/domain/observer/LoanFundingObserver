@@ -1,0 +1,7 @@
+package com.p2p.lending.domain.observer;
+
+import com.p2p.lending.domain.model.Loan;
+
+public interface LoanFundingObserver {
+    void onLoanFullyFunded(Loan loan);
+}
