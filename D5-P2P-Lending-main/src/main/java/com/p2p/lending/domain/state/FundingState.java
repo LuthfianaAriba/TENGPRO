@@ -3,6 +3,7 @@ package com.p2p.lending.domain.state;
 import com.p2p.lending.domain.model.Investment;
 import com.p2p.lending.domain.model.Lender;
 import com.p2p.lending.domain.model.Loan;
+import com.p2p.lending.domain.observer.LoanFundingNotifier;
 import com.p2p.lending.domain.valueobject.LoanStatus;
 
 public class FundingState implements LoanState {
@@ -28,7 +29,7 @@ public class FundingState implements LoanState {
     }
 
     // =============================================
-    // FUNDING LOGIC - pakai getFundedAmountAsDouble()
+    // FUNDING LOGIC
     // =============================================
 
     public void receiveFunding(Loan loan, double amount, Lender lender) {
@@ -40,7 +41,7 @@ public class FundingState implements LoanState {
         if (!lender.canInvest(amount)) {
             throw new IllegalStateException("Insufficient balance");
         }
-        // 3. Validasi overfund - pakai getFundedAmountAsDouble() bukan getFundedAmount()
+        // 3. Validasi overfund
         if (loan.getFundedAmountAsDouble() + amount > loan.getTargetAmount()) {
             throw new IllegalArgumentException("Exceeds loan target amount");
         }
@@ -55,9 +56,11 @@ public class FundingState implements LoanState {
         ));
         // 6. Kurangi saldo lender
         lender.invest(amount);
-        // 7. Update status kalau penuh - pakai getFundedAmountAsDouble()
+        // 7. Update status kalau penuh + trigger Observer
         if (loan.getFundedAmountAsDouble() >= loan.getTargetAmount()) {
             completeFunding(loan);
+            // Observer Pattern — notify semua observer via Singleton Notifier
+            LoanFundingNotifier.getInstance().notifyFullyFunded(loan);
         }
     }
 }
