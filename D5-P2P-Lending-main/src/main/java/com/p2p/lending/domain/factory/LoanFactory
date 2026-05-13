@@ -1,0 +1,83 @@
+package com.p2p.lending.domain.factory;
+
+import com.p2p.lending.domain.model.Borrower;
+import com.p2p.lending.domain.model.Loan;
+import com.p2p.lending.strategy.FlatInterestStrategy;
+import com.p2p.lending.strategy.EffectiveInterestStrategy;
+import com.p2p.lending.strategy.InterestStrategy;
+
+/**
+ * Factory Pattern - LoanFactory
+ * Tujuan: membuat objek Loan dengan validasi dan strategy
+ * yang tepat tanpa expose detail konstruksi ke client.
+ *
+ * Sesuai materi pertemuan 12:
+ * - UMKM Loan → pakai FlatInterestStrategy
+ * - Consumer Loan → pakai EffectiveInterestStrategy
+ */
+public class LoanFactory {
+
+    public enum LoanType {
+        UMKM,
+        CONSUMER
+    }
+
+    /**
+     * Factory method utama — pilih strategy sesuai tipe loan
+     */
+    public static Loan createLoan(LoanType type, String loanId, Borrower borrower,
+                                   double amount, int tenorMonths, double interestRate) {
+        switch (type) {
+            case UMKM:
+                return createUmkmLoan(loanId, borrower, amount, tenorMonths, interestRate);
+            case CONSUMER:
+                return createConsumerLoan(loanId, borrower, amount, tenorMonths, interestRate);
+            default:
+                throw new IllegalArgumentException("Tipe loan tidak dikenali: " + type);
+        }
+    }
+
+    /**
+     * UMKM Loan — pakai Flat Interest
+     * Bunga tetap setiap periode, mudah dipahami borrower UMKM
+     */
+    public static Loan createUmkmLoan(String loanId, Borrower borrower,
+                                       double amount, int tenorMonths, double interestRate) {
+        validateLoan(borrower, amount, tenorMonths);
+
+        Loan loan = new Loan(loanId, borrower, amount, "UMKM Loan", tenorMonths, interestRate);
+        loan.setInterestStrategy(new FlatInterestStrategy(interestRate));
+        return loan;
+    }
+
+    /**
+     * Consumer Loan — pakai Effective Interest
+     * Bunga dihitung dari sisa pokok, lebih akurat untuk konsumtif
+     */
+    public static Loan createConsumerLoan(String loanId, Borrower borrower,
+                                           double amount, int tenorMonths, double interestRate) {
+        validateLoan(borrower, amount, tenorMonths);
+
+        Loan loan = new Loan(loanId, borrower, amount, "Consumer Loan", tenorMonths, interestRate);
+        loan.setInterestStrategy(new EffectiveInterestStrategy(interestRate));
+        return loan;
+    }
+
+    /**
+     * Validasi domain sebelum loan dibuat
+     */
+    private static void validateLoan(Borrower borrower, double amount, int tenorMonths) {
+        if (borrower == null) {
+            throw new IllegalArgumentException("Borrower tidak boleh null");
+        }
+        if (!borrower.isVerified()) {
+            throw new IllegalStateException("Borrower belum diverifikasi");
+        }
+        if (amount <= 0) {
+            throw new IllegalArgumentException("Amount harus lebih dari 0");
+        }
+        if (tenorMonths <= 0) {
+            throw new IllegalArgumentException("Tenor harus lebih dari 0 bulan");
+        }
+    }
+}
