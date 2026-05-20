@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.p2p.lending.runner.RunCucumberTest" time="0.236" tests="14" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="25"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\ASUS\Downloads\D5-P2P-LendingNEW\D5-P2P-Lending\target\test-classes;C:\Users\ASUS\Downloads\D5-P2P-LendingNEW\D5-P2P-Lending\target\classes;C:\Users\ASUS\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.0\junit-jupiter-5.10.0.jar;C:\Users\ASUS\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.0\junit-jupiter-api-5.10.0.jar;C:\Users\ASUS\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\ASUS\.m2\repository\org\junit\platform\junit-platform-commons\1.10.0\junit-platform-commons-1.10.0.jar;C:\Users\ASUS\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.0\junit-jupiter-params-5.10.0.jar;C:\Users\ASUS\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.0\junit-jupiter-engine-5.10.0.jar;C:\Users\ASUS\.m2\repository\org\junit\platform\junit-platform-suite\1.10.0\junit-platform-suite-1.10.0.jar;C:\Users\ASUS\.m2\repository\org\junit\platform\junit-platform-suite-api\1.10.0\junit-platform-suite-api-1.10.0.jar;C:\Users\ASUS\.m2\repository\org\junit\platform\junit-platform-suite-engine\1.10.0\junit-platform-suite-engine-1.10.0.jar;C:\Users\ASUS\.m2\repository\org\junit\platform\junit-platform-suite-commons\1.10.0\junit-platform-suite-commons-1.10.0.jar;C:\Users\ASUS\.m2\repository\org\junit\platform\junit-platform-launcher\1.10.0\junit-platform-launcher-1.10.0.jar;C:\Users\ASUS\.m2\repository\org\junit\platform\junit-platform-engine\1.10.0\junit-platform-engine-1.10.0.jar;C:\Users\ASUS\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\ASUS\.m2\repository\org\mockito\mockito-core\5.5.0\mockito-core-5.5.0.jar;C:\Users\ASUS\.m2\repository\net\bytebuddy\byte-buddy\1.14.6\byte-buddy-1.14.6.jar;C:\Users\ASUS\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.6\byte-buddy-agent-1.14.6.jar;C:\Users\ASUS\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\ASUS\.m2\repository\io\cucumber\cucumber-java\7.14.0\cucumber-java-7.14.0.jar;C:\Users\ASUS\.m2\repository\io\cucumber\cucumber-core\7.14.0\cucumber-core-7.14.0.jar;C:\Users\ASUS\.m2\repository\io\cucumber\cucumber-gherkin\7.14.0\cucumber-gherkin-7.14.0.jar;C:\Users\ASUS\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.14.0\cucumber-gherkin-messages-7.14.0.jar;C:\Users\ASUS\.m2\repository\io\cucumber\gherkin\26.2.0\gherkin-26.2.0.jar;C:\Users\ASUS\.m2\repository\io\cucumber\messages\22.0.0\messages-22.0.0.jar;C:\Users\ASUS\.m2\repository\io\cucumber\tag-expressions\5.0.6\tag-expressions-5.0.6.jar;C:\Users\ASUS\.m2\repository\io\cucumber\cucumber-expressions\16.1.2\cucumber-expressions-16.1.2.jar;C:\Users\ASUS\.m2\repository\io\cucumber\datatable\7.14.0\datatable-7.14.0.jar;C:\Users\ASUS\.m2\repository\io\cucumber\cucumber-plugin\7.14.0\cucumber-plugin-7.14.0.jar;C:\Users\ASUS\.m2\repository\io\cucumber\docstring\7.14.0\docstring-7.14.0.jar;C:\Users\ASUS\.m2\repository\io\cucumber\html-formatter\20.4.0\html-formatter-20.4.0.jar;C:\Users\ASUS\.m2\repository\io\cucumber\junit-xml-formatter\0.2.0\junit-xml-formatter-0.2.0.jar;C:\Users\ASUS\.m2\repository\io\cucumber\ci-environment\9.2.0\ci-environment-9.2.0.jar;C:\Users\ASUS\.m2\repository\io\cucumber\cucumber-junit-platform-engine\7.14.0\cucumber-junit-platform-engine-7.14.0.jar;"/>
+    <property name="java.vm.vendor" value="Azul Systems, Inc."/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="http://www.azul.com/"/>
+    <property name="user.timezone" value="Asia/Jakarta"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="25"/>
+    <property name="user.country" value="ID"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Apache NetBeans\jdk\bin"/>
+    <property name="sun.java.command" value="C:\Users\ASUS\AppData\Local\Temp\surefire7482495965539052016\surefirebooter-20260517110535958_3.jar C:\Users\ASUS\AppData\Local\Temp\surefire7482495965539052016 2026-05-17T11-05-35_862-jvmRun1 surefire-20260517110535958_1tmp surefire_0-20260517110535958_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\ASUS\Downloads\D5-P2P-LendingNEW\D5-P2P-Lending\target\test-classes;C:\Users\ASUS\Downloads\D5-P2P-LendingNEW\D5-P2P-Lending\target\classes;C:\Users\ASUS\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.0\junit-jupiter-5.10.0.jar;C:\Users\ASUS\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.0\junit-jupiter-api-5.10.0.jar;C:\Users\ASUS\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\ASUS\.m2\repository\org\junit\platform\junit-platform-commons\1.10.0\junit-platform-commons-1.10.0.jar;C:\Users\ASUS\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.0\junit-jupiter-params-5.10.0.jar;C:\Users\ASUS\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.0\junit-jupiter-engine-5.10.0.jar;C:\Users\ASUS\.m2\repository\org\junit\platform\junit-platform-suite\1.10.0\junit-platform-suite-1.10.0.jar;C:\Users\ASUS\.m2\repository\org\junit\platform\junit-platform-suite-api\1.10.0\junit-platform-suite-api-1.10.0.jar;C:\Users\ASUS\.m2\repository\org\junit\platform\junit-platform-suite-engine\1.10.0\junit-platform-suite-engine-1.10.0.jar;C:\Users\ASUS\.m2\repository\org\junit\platform\junit-platform-suite-commons\1.10.0\junit-platform-suite-commons-1.10.0.jar;C:\Users\ASUS\.m2\repository\org\junit\platform\junit-platform-launcher\1.10.0\junit-platform-launcher-1.10.0.jar;C:\Users\ASUS\.m2\repository\org\junit\platform\junit-platform-engine\1.10.0\junit-platform-engine-1.10.0.jar;C:\Users\ASUS\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\ASUS\.m2\repository\org\mockito\mockito-core\5.5.0\mockito-core-5.5.0.jar;C:\Users\ASUS\.m2\repository\net\bytebuddy\byte-buddy\1.14.6\byte-buddy-1.14.6.jar;C:\Users\ASUS\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.6\byte-buddy-agent-1.14.6.jar;C:\Users\ASUS\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\ASUS\.m2\repository\io\cucumber\cucumber-java\7.14.0\cucumber-java-7.14.0.jar;C:\Users\ASUS\.m2\repository\io\cucumber\cucumber-core\7.14.0\cucumber-core-7.14.0.jar;C:\Users\ASUS\.m2\repository\io\cucumber\cucumber-gherkin\7.14.0\cucumber-gherkin-7.14.0.jar;C:\Users\ASUS\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.14.0\cucumber-gherkin-messages-7.14.0.jar;C:\Users\ASUS\.m2\repository\io\cucumber\gherkin\26.2.0\gherkin-26.2.0.jar;C:\Users\ASUS\.m2\repository\io\cucumber\messages\22.0.0\messages-22.0.0.jar;C:\Users\ASUS\.m2\repository\io\cucumber\tag-expressions\5.0.6\tag-expressions-5.0.6.jar;C:\Users\ASUS\.m2\repository\io\cucumber\cucumber-expressions\16.1.2\cucumber-expressions-16.1.2.jar;C:\Users\ASUS\.m2\repository\io\cucumber\datatable\7.14.0\datatable-7.14.0.jar;C:\Users\ASUS\.m2\repository\io\cucumber\cucumber-plugin\7.14.0\cucumber-plugin-7.14.0.jar;C:\Users\ASUS\.m2\repository\io\cucumber\docstring\7.14.0\docstring-7.14.0.jar;C:\Users\ASUS\.m2\repository\io\cucumber\html-formatter\20.4.0\html-formatter-20.4.0.jar;C:\Users\ASUS\.m2\repository\io\cucumber\junit-xml-formatter\0.2.0\junit-xml-formatter-0.2.0.jar;C:\Users\ASUS\.m2\repository\io\cucumber\ci-environment\9.2.0\ci-environment-9.2.0.jar;C:\Users\ASUS\.m2\repository\io\cucumber\cucumber-junit-platform-engine\7.14.0\cucumber-junit-platform-engine-7.14.0.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\ASUS"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2026-01-20"/>
+    <property name="java.home" value="C:\Program Files\Apache NetBeans\jdk"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\ASUS\Downloads\D5-P2P-LendingNEW\D5-P2P-Lending"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\ASUS\AppData\Local\Temp\surefire7482495965539052016\surefirebooter-20260517110535958_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="25.0.2+10-LTS"/>
+    <property name="user.name" value="ASUS"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Zulu25.32+17-CA"/>
+    <property name="maven.ext.class.path" value="C:\Program Files\Apache NetBeans\java\maven-nblib\netbeans-eventspy.jar"/>
+    <property name="localRepository" value="C:\Users\ASUS\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="http://www.azul.com/support/"/>
+    <property name="java.io.tmpdir" value="C:\Users\ASUS\AppData\Local\Temp\"/>
+    <property name="java.version" value="25.0.2"/>
+    <property name="user.dir" value="C:\Users\ASUS\Downloads\D5-P2P-LendingNEW\D5-P2P-Lending"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Apache NetBeans\jdk\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\MinGW\bin;C:\Program Files\nodejs\;C:\Program Files\Java\jdk-25.0.2\bin;C:\apache-maven\apache-maven-3.9.15\bin;C:\Users\ASUS\AppData\Local\Programs\Python\Launcher\;C:\Users\ASUS\AppData\Local\Microsoft\WindowsApps;C:\Users\ASUS\AppData\Local\Programs\Microsoft VS Code\bin;C:\mingw64\bin;C:\Users\ASUS\AppData\Local\Python\bin;C:\Users\ASUS\AppData\Roaming\npm;C:\Users\ASUS\AppData\Local\GitHubDesktop\bin;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Azul Systems, Inc."/>
+    <property name="java.vm.version" value="25.0.2+10-LTS"/>
+    <property name="stdin.encoding" value="Cp1252"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="69.0"/>
+  </properties>
+  <testcase name="Lender successfully funds a loan" classname="Loan Funding" time="0.083">
+    <system-out><![CDATA[
+Scenario: Lender successfully funds a loan                 &amp#27;[90m# features/funding.feature:3&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthere is a loan with status &amp#27;[0m&amp#27;[32m&amp#27;[1m"FUNDING"&amp#27;[0m              &amp#27;[90m# com.p2p.lending.steps.FundingStepDef.there_is_a_loan_with_status(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32ma lender has sufficient balance&amp#27;[0m                      &amp#27;[90m# com.p2p.lending.steps.FundingStepDef.a_lender_has_sufficient_balance()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mthe loan receives funding of &amp#27;[0m&amp#27;[32m&amp#27;[1m500000&amp#27;[0m&amp#27;[32m from the lender&amp#27;[0m &amp#27;[90m# com.p2p.lending.steps.FundingStepDef.the_loan_receives_funding_of_from_the_lender(long)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthe funded amount should be &amp#27;[0m&amp#27;[32m&amp#27;[1m500000&amp#27;[0m                  &amp#27;[90m# com.p2p.lending.steps.FundingStepDef.the_funded_amount_should_be(long)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Loan funded by multiple lenders" classname="Loan Funding" time="0.007">
+    <system-out><![CDATA[
+Scenario: Loan funded by multiple lenders                &amp#27;[90m# features/funding.feature:9&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthere is a loan with target amount &amp#27;[0m&amp#27;[32m&amp#27;[1m1000000&amp#27;[0m       &amp#27;[90m# com.p2p.lending.steps.FundingStepDef.there_is_a_loan_with_target_amount(long)&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mthe loan receives funding of &amp#27;[0m&amp#27;[32m&amp#27;[1m400000&amp#27;[0m&amp#27;[32m from lender A&amp#27;[0m &amp#27;[90m# com.p2p.lending.steps.FundingStepDef.the_loan_receives_funding_of_from_lender_a(long)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe loan receives funding of &amp#27;[0m&amp#27;[32m&amp#27;[1m600000&amp#27;[0m&amp#27;[32m from lender B&amp#27;[0m  &amp#27;[90m# com.p2p.lending.steps.FundingStepDef.the_loan_receives_funding_of_from_lender_b(long)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthe funded amount should be &amp#27;[0m&amp#27;[32m&amp#27;[1m1000000&amp#27;[0m               &amp#27;[90m# com.p2p.lending.steps.FundingStepDef.the_funded_amount_should_be(long)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe loan should be fully funded&amp#27;[0m                    &amp#27;[90m# com.p2p.lending.steps.FundingStepDef.the_loan_should_be_fully_funded()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Remaining funding is calculated correctly" classname="Loan Funding" time="0.007">
+    <system-out><![CDATA[
+Scenario: Remaining funding is calculated correctly &amp#27;[90m# features/funding.feature:16&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthere is a loan with target amount &amp#27;[0m&amp#27;[32m&amp#27;[1m1000000&amp#27;[0m  &amp#27;[90m# com.p2p.lending.steps.FundingStepDef.there_is_a_loan_with_target_amount(long)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe funded amount is &amp#27;[0m&amp#27;[32m&amp#27;[1m300000&amp#27;[0m                   &amp#27;[90m# com.p2p.lending.steps.FundingStepDef.the_funded_amount_is(long)&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mthe system checks remaining funding needed&amp#27;[0m   &amp#27;[90m# com.p2p.lending.steps.FundingStepDef.the_system_checks_remaining_funding_needed()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthe remaining funding should be &amp#27;[0m&amp#27;[32m&amp#27;[1m700000&amp#27;[0m       &amp#27;[90m# com.p2p.lending.steps.FundingStepDef.the_remaining_funding_should_be(long)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Funding cannot exceed loan target amount" classname="Loan Funding" time="0.008">
+    <system-out><![CDATA[
+Scenario: Funding cannot exceed loan target amount                           &amp#27;[90m# features/funding.feature:22&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthere is a loan with target amount &amp#27;[0m&amp#27;[32m&amp#27;[1m1000000&amp#27;[0m                           &amp#27;[90m# com.p2p.lending.steps.FundingStepDef.there_is_a_loan_with_target_amount(long)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe funded amount is &amp#27;[0m&amp#27;[32m&amp#27;[1m900000&amp#27;[0m                                            &amp#27;[90m# com.p2p.lending.steps.FundingStepDef.the_funded_amount_is(long)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32ma lender has sufficient balance&amp#27;[0m                                        &amp#27;[90m# com.p2p.lending.steps.FundingStepDef.a_lender_has_sufficient_balance()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mthe loan receives funding of &amp#27;[0m&amp#27;[32m&amp#27;[1m200000&amp#27;[0m&amp#27;[32m from the lender&amp#27;[0m                   &amp#27;[90m# com.p2p.lending.steps.FundingStepDef.the_loan_receives_funding_of_from_the_lender(long)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthe system should reject the funding&amp#27;[0m                                  &amp#27;[90m# com.p2p.lending.steps.FundingStepDef.the_system_should_reject_the_funding()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe funding error message &amp#27;[0m&amp#27;[32m&amp#27;[1m"Exceeds loan target amount"&amp#27;[0m&amp#27;[32m should be shown&amp#27;[0m &amp#27;[90m# com.p2p.lending.steps.FundingStepDef.the_funding_error_message_should_be_shown(java.lang.String)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Lender cannot fund with insufficient balance" classname="Loan Funding" time="0.006">
+    <system-out><![CDATA[
+Scenario: Lender cannot fund with insufficient balance                 &amp#27;[90m# features/funding.feature:30&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthere is a loan with status &amp#27;[0m&amp#27;[32m&amp#27;[1m"FUNDING"&amp#27;[0m                          &amp#27;[90m# com.p2p.lending.steps.FundingStepDef.there_is_a_loan_with_status(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32ma lender has balance of &amp#27;[0m&amp#27;[32m&amp#27;[1m100000&amp#27;[0m                                   &amp#27;[90m# com.p2p.lending.steps.FundingStepDef.a_lender_has_balance_of(long)&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mthe loan receives funding of &amp#27;[0m&amp#27;[32m&amp#27;[1m500000&amp#27;[0m&amp#27;[32m from the lender&amp#27;[0m             &amp#27;[90m# com.p2p.lending.steps.FundingStepDef.the_loan_receives_funding_of_from_the_lender(long)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthe system should reject the funding&amp#27;[0m                            &amp#27;[90m# com.p2p.lending.steps.FundingStepDef.the_system_should_reject_the_funding()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe funding error message &amp#27;[0m&amp#27;[32m&amp#27;[1m"Insufficient balance"&amp#27;[0m&amp#27;[32m should be shown&amp#27;[0m &amp#27;[90m# com.p2p.lending.steps.FundingStepDef.the_funding_error_message_should_be_shown(java.lang.String)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Successful loan application" classname="Loan Application" time="0.007">
+    <system-out><![CDATA[
+Scenario: Successful loan application             &amp#27;[90m# features/loan_application.feature:3&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32ma borrower is registered and verified&amp#27;[0m     &amp#27;[90m# com.p2p.lending.steps.LoanValidationStepDef.aBorrowerIsRegisteredAndVerified()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mthe borrower applies for a loan of &amp#27;[0m&amp#27;[32m&amp#27;[1m1000000&amp#27;[0m &amp#27;[90m# com.p2p.lending.steps.LoanValidationStepDef.theBorrowerAppliesForALoanOf(int)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthe loan should be created&amp#27;[0m                 &amp#27;[90m# com.p2p.lending.steps.LoanValidationStepDef.theLoanShouldBeCreated()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe loan status should be &amp#27;[0m&amp#27;[32m&amp#27;[1m"APPLIED"&amp#27;[0m         &amp#27;[90m# com.p2p.lending.steps.LoanValidationStepDef.theLoanStatusShouldBe(java.lang.String)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Loan application fails due to invalid amount" classname="Loan Application" time="0.004">
+    <system-out><![CDATA[
+Scenario: Loan application fails due to invalid amount       &amp#27;[90m# features/loan_application.feature:9&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32ma borrower is registered and verified&amp#27;[0m                &amp#27;[90m# com.p2p.lending.steps.LoanValidationStepDef.aBorrowerIsRegisteredAndVerified()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mthe borrower applies for a loan of &amp#27;[0m&amp#27;[32m&amp#27;[1m-500000&amp#27;[0m            &amp#27;[90m# com.p2p.lending.steps.LoanValidationStepDef.theBorrowerAppliesForALoanOf(int)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthe system should reject the loan application&amp#27;[0m         &amp#27;[90m# com.p2p.lending.steps.LoanValidationStepDef.theSystemShouldRejectTheLoanApplication()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32man error message &amp#27;[0m&amp#27;[32m&amp#27;[1m"Invalid loan amount"&amp#27;[0m&amp#27;[32m should be shown&amp#27;[0m &amp#27;[90m# com.p2p.lending.steps.LoanValidationStepDef.anErrorMessageShouldBeShown(java.lang.String)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Loan transitions from APPLIED to FUNDING" classname="Loan State Transition" time="0.002">
+    <system-out><![CDATA[
+Scenario: Loan transitions from APPLIED to FUNDING &amp#27;[90m# features/loan_state.feature:6&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32ma loan exists with status APPLIED&amp#27;[0m          &amp#27;[90m# com.p2p.lending.steps.LoanStateStepDef.a_loan_exists_with_status_applied()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mthe system starts the funding process&amp#27;[0m       &amp#27;[90m# com.p2p.lending.steps.LoanStateStepDef.the_system_starts_the_funding_process()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthe loan status should change to FUNDING&amp#27;[0m    &amp#27;[90m# com.p2p.lending.steps.LoanStateStepDef.the_loan_status_should_change_to_funding()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Loan becomes FULLY FUNDED" classname="Loan State Transition" time="0.002">
+    <system-out><![CDATA[
+Scenario: Loan becomes FULLY FUNDED                     &amp#27;[90m# features/loan_state.feature:11&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32ma loan exists with status FUNDING&amp#27;[0m               &amp#27;[90m# com.p2p.lending.steps.LoanStateStepDef.a_loan_exists_with_status_funding()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe total collected funds have reached the target&amp#27;[0m &amp#27;[90m# com.p2p.lending.steps.LoanStateStepDef.the_total_collected_funds_have_reached_the_target()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mthe system checks the funding status&amp#27;[0m             &amp#27;[90m# com.p2p.lending.steps.LoanStateStepDef.the_system_checks_the_funding_status()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthe loan status should change to FULLY_FUNDED&amp#27;[0m    &amp#27;[90m# com.p2p.lending.steps.LoanStateStepDef.the_loan_status_should_change_to_fully_funded()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Illegal transition is rejected by the system" classname="Loan State Transition" time="0.003">
+    <system-out><![CDATA[
+Scenario: Illegal transition is rejected by the system            &amp#27;[90m# features/loan_state.feature:17&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32ma loan exists with status APPLIED&amp#27;[0m                         &amp#27;[90m# com.p2p.lending.steps.LoanStateStepDef.a_loan_exists_with_status_applied()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mthe system tries to directly change status to DISBURSED&amp#27;[0m    &amp#27;[90m# com.p2p.lending.steps.LoanStateStepDef.the_system_tries_to_directly_change_status_to_disbursed()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthe system should throw an error due to invalid transition&amp#27;[0m &amp#27;[90m# com.p2p.lending.steps.LoanStateStepDef.the_system_should_throw_an_error_due_to_invalid_transition()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Unverified borrower is rejected when applying for a loan" classname="Loan Validation" time="0.002">
+    <system-out><![CDATA[
+Scenario: Unverified borrower is rejected when applying for a loan &amp#27;[90m# features/loan_validation.feature:6&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32ma borrower is registered but not verified&amp#27;[0m                  &amp#27;[90m# com.p2p.lending.steps.LoanValidationStepDef.aBorrowerIsRegisteredButNotVerified()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mthe borrower applies for a loan of &amp#27;[0m&amp#27;[32m&amp#27;[1m1000000&amp#27;[0m                  &amp#27;[90m# com.p2p.lending.steps.LoanValidationStepDef.theBorrowerAppliesForALoanOf(int)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthe system should reject the loan application&amp#27;[0m               &amp#27;[90m# com.p2p.lending.steps.LoanValidationStepDef.theSystemShouldRejectTheLoanApplication()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32man error message &amp#27;[0m&amp#27;[32m&amp#27;[1m"Borrower not verified"&amp#27;[0m&amp#27;[32m should be shown&amp#27;[0m     &amp#27;[90m# com.p2p.lending.steps.LoanValidationStepDef.anErrorMessageShouldBeShown(java.lang.String)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Loan application is rejected when amount is zero" classname="Loan Validation" time="0.002">
+    <system-out><![CDATA[
+Scenario: Loan application is rejected when amount is zero   &amp#27;[90m# features/loan_validation.feature:12&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32ma borrower is registered and verified&amp#27;[0m                &amp#27;[90m# com.p2p.lending.steps.LoanValidationStepDef.aBorrowerIsRegisteredAndVerified()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mthe borrower applies for a loan of &amp#27;[0m&amp#27;[32m&amp#27;[1m0&amp#27;[0m                  &amp#27;[90m# com.p2p.lending.steps.LoanValidationStepDef.theBorrowerAppliesForALoanOf(int)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthe system should reject the loan application&amp#27;[0m         &amp#27;[90m# com.p2p.lending.steps.LoanValidationStepDef.theSystemShouldRejectTheLoanApplication()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32man error message &amp#27;[0m&amp#27;[32m&amp#27;[1m"Invalid loan amount"&amp#27;[0m&amp#27;[32m should be shown&amp#27;[0m &amp#27;[90m# com.p2p.lending.steps.LoanValidationStepDef.anErrorMessageShouldBeShown(java.lang.String)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Investment is rejected when it would exceed the loan target amount" classname="Loan Validation" time="0.005">
+    <system-out><![CDATA[
+Scenario: Investment is rejected when it would exceed the loan target amount &amp#27;[90m# features/loan_validation.feature:18&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthere is a loan with target amount &amp#27;[0m&amp#27;[32m&amp#27;[1m1000000&amp#27;[0m                           &amp#27;[90m# com.p2p.lending.steps.FundingStepDef.there_is_a_loan_with_target_amount(long)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe funded amount is &amp#27;[0m&amp#27;[32m&amp#27;[1m900000&amp#27;[0m                                            &amp#27;[90m# com.p2p.lending.steps.FundingStepDef.the_funded_amount_is(long)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32ma lender has sufficient balance of &amp#27;[0m&amp#27;[32m&amp#27;[1m200000&amp#27;[0m                              &amp#27;[90m# com.p2p.lending.steps.FundingStepDef.a_lender_has_sufficient_balance_of(long)&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mthe lender invests &amp#27;[0m&amp#27;[32m&amp#27;[1m200000&amp#27;[0m&amp#27;[32m into the loan&amp#27;[0m                               &amp#27;[90m# com.p2p.lending.steps.FundingStepDef.the_lender_invests_into_the_loan(long)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthe system should reject the investment&amp#27;[0m                               &amp#27;[90m# com.p2p.lending.steps.FundingStepDef.the_system_should_reject_the_investment()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe funding error message &amp#27;[0m&amp#27;[32m&amp#27;[1m"Exceeds loan target amount"&amp#27;[0m&amp#27;[32m should be shown&amp#27;[0m &amp#27;[90m# com.p2p.lending.steps.FundingStepDef.the_funding_error_message_should_be_shown(java.lang.String)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Investment is rejected when lender has insufficient balance" classname="Loan Validation" time="0.004">
+    <system-out><![CDATA[
+Scenario: Investment is rejected when lender has insufficient balance  &amp#27;[90m# features/loan_validation.feature:26&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthere is a loan with target amount &amp#27;[0m&amp#27;[32m&amp#27;[1m1000000&amp#27;[0m                     &amp#27;[90m# com.p2p.lending.steps.FundingStepDef.there_is_a_loan_with_target_amount(long)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32ma lender has balance of &amp#27;[0m&amp#27;[32m&amp#27;[1m100000&amp#27;[0m                                   &amp#27;[90m# com.p2p.lending.steps.FundingStepDef.a_lender_has_balance_of(long)&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mthe lender invests &amp#27;[0m&amp#27;[32m&amp#27;[1m200000&amp#27;[0m&amp#27;[32m into the loan&amp#27;[0m                         &amp#27;[90m# com.p2p.lending.steps.FundingStepDef.the_lender_invests_into_the_loan(long)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthe system should reject the investment&amp#27;[0m                         &amp#27;[90m# com.p2p.lending.steps.FundingStepDef.the_system_should_reject_the_investment()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe funding error message &amp#27;[0m&amp#27;[32m&amp#27;[1m"Insufficient balance"&amp#27;[0m&amp#27;[32m should be shown&amp#27;[0m &amp#27;[90m# com.p2p.lending.steps.FundingStepDef.the_funding_error_message_should_be_shown(java.lang.String)&amp#27;[0m
+]]></system-out>
+  </testcase>
+</testsuite>

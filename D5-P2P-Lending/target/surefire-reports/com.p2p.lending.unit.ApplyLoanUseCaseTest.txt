@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.p2p.lending.unit.ApplyLoanUseCaseTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.535 s -- in com.p2p.lending.unit.ApplyLoanUseCaseTest
